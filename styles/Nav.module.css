@@ -1,0 +1,319 @@
+.navContainer {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  padding-top: 2rem;
+  background-color: transparent;
+}
+
+.navContainer .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navContainer .nav .navBrand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navContainer .nav .navBrand .brandName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.6rem;
+}
+
+.navContainer .nav .navBrand .brandName .brandNameTop {
+  color: #98002e;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.navContainer .nav .navBrand .brandName .brandNameDown {
+  text-transform: uppercase;
+  color: white;
+}
+
+.navContainer .nav .navBrand img {
+  width: 4rem;
+}
+
+.navContainer .nav ul {
+  list-style: none;
+  position: fixed;
+  top: 14rem;
+  left: -100rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navContainer .nav ul li {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding-left: 2rem;
+}
+
+.navContainer .nav ul li::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 0.1rem;
+  background-color: #eeeeee;
+  margin-top: 0.5rem;
+}
+
+.navContainer .nav .open {
+  background-color: #464646;
+  width: 80%;
+  height: 100vh;
+  z-index: 10 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  left: 0;
+  margin-top: 0;
+  color: white;
+  overflow: hidden;
+  position: absolute;
+}
+
+.navContainer .nav .open .navFirst {
+  margin-top: 5rem;
+}
+
+.navContainer .nav .open::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.navContainer .nav .close {
+  left: -100rem;
+}
+
+.navContainer .nav .toggler {
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.navContainer .nav .toggler img {
+  width: 2rem;
+}
+
+.navContainer .nav .toggler span {
+  width: 5rem;
+  font-size: 2rem;
+  background-color: #98002e;
+}
+
+.navContainer .nav .toggler svg {
+  color: #eeeeee;
+}
+
+.navContainer .hr {
+  margin: 1rem 0;
+}
+
+.navContainer .loginReg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+}
+
+.navContainer .loginReg .search {
+  background-color: #ffb607;
+  padding: 1.2rem;
+  border-radius: 50%;
+  color: white;
+  height: 100%;
+  width: 4rem;
+  cursor: pointer;
+}
+
+.navContainer .loginReg span {
+  width: 0.2rem;
+  height: 100%;
+  background-color: aliceblue;
+  margin: 0 4rem;
+}
+
+.navContainer .loginReg button {
+  background-color: #ffb607;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .navContainer {
+    position: absolute;
+    width: 90%;
+    padding: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 0.1rem solid white;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .navContainer .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navContainer .nav .navBrand {
+    width: 30rem;
+  }
+  .navContainer .nav .navBrand .brandName .brandNameTop {
+    font-size: 2.6rem;
+  }
+  .navContainer .nav .navBrand .brandName .brandNameDown {
+    font-size: 2rem;
+  }
+  .navContainer .nav ul,
+  .navContainer .nav .open,
+  .navContainer .nav .close {
+    position: static;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background: none;
+    width: 100%;
+    list-style: none;
+    padding: 0 1rem;
+  }
+  .navContainer .nav ul:nth-child(2),
+  .navContainer .nav .open:nth-child(2),
+  .navContainer .nav .close:nth-child(2) {
+    margin-top: 0 !important;
+  }
+  .navContainer .nav ul li::after,
+  .navContainer .nav .open li::after,
+  .navContainer .nav .close li::after {
+    content: "";
+    width: 0;
+    height: 0;
+  }
+  .navContainer .nav ul .navFirst,
+  .navContainer .nav .open .navFirst,
+  .navContainer .nav .close .navFirst {
+    margin-top: initial;
+  }
+  .navContainer .nav ul li,
+  .navContainer .nav .open li,
+  .navContainer .nav .close li {
+    color: initial;
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 70rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: white;
+  }
+  .navContainer .nav ul li::after,
+  .navContainer .nav .open li::after,
+  .navContainer .nav .close li::after {
+    content: "";
+    width: 0%;
+    height: 0.2rem;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .navContainer .nav ul li:hover::after,
+  .navContainer .nav .open li:hover::after,
+  .navContainer .nav .close li:hover::after {
+    width: 100%;
+    background-color: #ffb607;
+  }
+  .navContainer .nav .toggler {
+    display: none;
+  }
+  .navContainer .loginReg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .navContainer .loginReg .verticalBar {
+    width: 0.2rem;
+    height: 2rem;
+    background-color: #121212 !important;
+    margin: 0 0.3rem;
+  }
+}
+/*# sourceMappingURL=Nav.module.css.map */

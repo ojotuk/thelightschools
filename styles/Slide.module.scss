@@ -1,0 +1,116 @@
+$primaryColorRed: #98002e;
+$primaryColorBlue: rgb(61, 178, 213);
+$primaryColorGreen: rgb(59, 182, 76);
+$primaryBtn: rgb(255, 182, 7);
+$secondaryBackground: rgb(245, 245, 245);
+
+.slide_1 {
+  height: 60vh;
+  max-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  animation-name: slide_1;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  overflow: hidden;
+  > div {
+    width: 50rem;
+    max-width: 90vw;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: auto;
+    padding: 1rem;
+    position: relative;
+    h3 {
+      font-size: 2.4rem;
+      color: $primaryBtn;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.1rem;
+      transform: translateX(-0.1rem);
+    }
+    p {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    .bookmark {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $primaryBtn;
+    }
+  }
+}
+.slide_2 {
+  background-image: url("/games_1.jpg");
+  height: 60vh;
+  max-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  > div {
+    width: 50rem;
+    max-width: 90vw;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: auto;
+    padding: 1rem;
+    position: relative;
+    // margin-top: 4rem;
+    h3 {
+      font-size: 2.4rem;
+      color: $primaryColorRed;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      transform: translateX(-0.1rem);
+      text-align: center;
+    }
+    p {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    .bookmark {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $primaryColorRed;
+    }
+  }
+}
+
+@keyframes slide_1 {
+  0% {
+    background-image: url("/boys_lab.jpg");
+  }
+  50% {
+    background-image: url("/girls_lab.jpg");
+  }
+  100% {
+    background-image: url("/girls_lab.jpg");
+  }
+}
+@media screen and (max-width: 900px) {
+}

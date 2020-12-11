@@ -1,0 +1,119 @@
+// @import "https://fonts.googleapis.com/css?family=Antic+Didone|Montserrat:700";
+
+$white: #fff;
+$primaryColorRed: #98002e;
+.mainContentWrapper {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 4rem;
+  background-color: $primaryColorRed;
+  .heading {
+    font-size: 3.6rem;
+    color: white;
+    padding-bottom: 2rem;
+  }
+  .content {
+    height: 100%;
+  }
+}
+.selectors {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  .selector {
+    border: 1px solid $white;
+    background: none;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin: 5px 0;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    &:hover,
+    &.active {
+      background: white;
+      opacity: 0.9;
+    }
+  }
+}
+
+section.wrapper {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: background-image 500ms ease-in-out;
+}
+
+aside.panel {
+  width: 50%;
+  max-width: 90vw;
+  padding: 10rem 2rem;
+  opacity: 0.9;
+  color: $white;
+  box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+  transition: background 500ms ease-in-out;
+  h2.panel_header,
+  p.panel-info {
+    margin: 0;
+    padding: 1.3rem 3.5rem;
+  }
+  h2.panel_header {
+    padding-top: 2rem;
+    font-size: 2.4rem;
+    font: {
+      weight: normal;
+      //   size: 2.5rem;
+    }
+    text-transform: capitalize;
+    // background-color: blue;
+    padding-left: 0;
+  }
+  p.panel_info {
+    font: {
+      size: 1.8rem;
+    }
+    line-height: 1.8em;
+  }
+  button.panel_button {
+    margin: 1.3rem 3.5rem;
+    padding: 0.8em 1.3em;
+    margin-left: 0;
+    background: none;
+    border: 1px solid $white;
+    color: $white;
+    cursor: pointer;
+    font: {
+      family: "Montserrat";
+      size: 0.8rem;
+      weight: 700;
+    }
+    text-transform: uppercase;
+    transition: box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+    &:hover {
+      box-shadow: inset 0 0 1.5em 1.5em $white;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

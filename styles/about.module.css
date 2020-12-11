@@ -1,0 +1,19 @@
+.about {
+  margin: 0 !important;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  position: relative;
+}
+.header {
+  position: absolute;
+  top: 0;
+  display: flex;
+  background-color: aliceblue;
+  height: 70px;
+  padding-top: 20px;
+}
