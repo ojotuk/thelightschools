@@ -294,6 +294,12 @@
     width: 100%;
     background-color: #ffb607;
   }
+  .navContainer .nav ul li .actve,
+  .navContainer .nav .open li .actve,
+  .navContainer .nav .close li .actve {
+    background-color: #ffb607 !important;
+    color: black !important;
+  }
   .navContainer .nav .toggler {
     display: none;
   }

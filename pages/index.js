@@ -45,9 +45,13 @@ export default function Home() {
               potential both as students and as members of their communities.
             </p>
             <div className={styles.ctaDiv}>
-              <button className={styles.enroll}>
-                <FontAwesomeIcon icon={faAnchor} /> Enroll Today
-              </button>
+              <Link href="/admission">
+                <a>
+                  <button className={styles.enroll}>
+                    <FontAwesomeIcon icon={faAnchor} /> Enroll Today
+                  </button>
+                </a>
+              </Link>
               <button className={styles.tour}>
                 <FontAwesomeIcon icon={faCalendar} /> Schedule a Tour
               </button>
@@ -101,39 +105,46 @@ export default function Home() {
             <h1>Welcome to Our School</h1>
           </div>
           <div className={styles.welcomeContent}>
-            <div className={styles.welcome_col_1}>
-              <div className={styles.philosophy}>
-                <img src="/our_school.jpg" />
-                <div>
-                  <h3>Our Educational Principle &amp; philosophy</h3>
-                  <p>
-                    Any group of people who believe in an idea which they accept
-                    as their way of life would also want their future
-                    generations to adopt such idea so as to preserve it. The
-                    culture of a group of people is what determines the peoples’
-                    civilization, their goals and their way of life. Based on
-                    their culture the people are defined as one unique human
-                    entity. Further more it is the culture that distinguishes
-                    one group of people from another. This also holds true for
-                    the Muslim community.
-                  </p>
-                  <span>Read More</span>
-                </div>
-              </div>
+            {/* <div className={styles.welcome_col_1}> */}
+            <div id="about">
+              <h3>About Us</h3>
+              <p>
+                Donec rutrum congue leo eget malesuada. Curabitur arcu erat,
+                accumsan id imperdiet et, porttitor at sem. Curabitur arcu erat,
+                accumsan id imperdiet et, porttitor at sem.
+              </p>
             </div>
-            <div className={styles.welcome_col_2}>
-              <div className={styles.grid_gallery}>
-                <img src="/gallery01.jpg" />
-                <img src="/gallery02.jpg" />
-                <img src="/gallery01.jpg" />
-                <img src="/gallery02.jpg" />
-                <div className={styles.overlay}>
-                  <Link href="/">
-                    <a>Gallery</a>
-                  </Link>
-                </div>
-              </div>
+            <div>
+              <h3>Our Educational Principle &amp; philosophy</h3>
+              <p>
+                Any group of people who believe in an idea which they accept as
+                their way of life would also want their future generations to
+                adopt such idea so as to preserve it. The culture of a group of
+                people is what determines the peoples’ civilization, their goals
+                and their way of life. Based on their culture the people are
+                defined as one unique human entity. Further more it is the
+                culture that distinguishes one group of people from another.
+                This also holds true for the Muslim community.
+              </p>
+              <span>Read More</span>
             </div>
+            <div>
+              <h3>Mission</h3>
+              <p>
+                Donec rutrum congue leo eget malesuada. Curabitur arcu erat,
+                accumsan id imperdiet et, porttitor at sem. Curabitur arcu erat,
+                accumsan id imperdiet et, porttitor at sem.
+              </p>
+            </div>
+            <div>
+              <h3>Vision</h3>
+              <p>
+                Donec rutrum congue leo eget malesuada. Curabitur arcu erat,
+                accumsan id imperdiet et, porttitor at sem. Curabitur arcu erat,
+                accumsan id imperdiet et, porttitor at sem.
+              </p>
+            </div>
+            {/* </div> */}
           </div>
         </section>
         <section className={styles.custom} id="facilities">
@@ -153,7 +164,7 @@ export default function Home() {
               Cras ultricies ligula sed magna dictum porta.
             </p>
             <span>
-              <Link href="/download.pdf">
+              <Link href="/admission">
                 <a>Apply</a>
               </Link>
             </span>

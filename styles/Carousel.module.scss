@@ -5,14 +5,16 @@ $primaryColorRed: #98002e;
 .mainContentWrapper {
   height: 100%;
   width: 90%;
+  // max-height: 10rem;
   margin: 0 auto;
   position: relative;
   padding-bottom: 4rem;
-  background-color: $primaryColorRed;
+  background-color: rgba($color: $primaryColorRed, $alpha: 1);
+  // background-color: transparent;
   .heading {
-    font-size: 3.6rem;
+    font-size: 2.4rem;
     color: white;
-    padding-bottom: 2rem;
+    padding: 1rem;
   }
   .content {
     height: 100%;
@@ -56,13 +58,15 @@ section.wrapper {
 }
 
 aside.panel {
-  width: 50%;
+  width: 100%;
+  height: 100%;
   max-width: 90vw;
-  padding: 10rem 2rem;
+  padding: 1rem 2rem;
   opacity: 0.9;
   color: $white;
-  box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-  transition: background 500ms ease-in-out;
+  box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba($color: $primaryColorRed, $alpha: 0.5);
+  transition: background-color 500ms ease-in-out;
   h2.panel_header,
   p.panel-info {
     margin: 0;
@@ -115,5 +119,12 @@ aside.panel {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  aside.panel {
+    width: 50%;
+    background-color: rgba($color: $primaryColorRed, $alpha: 0.8);
   }
 }

@@ -1,0 +1,225 @@
+$primaryColorRed: #98002e;
+$primaryColor: rgb(255, 182, 7);
+$secondaryBackground: #ffffff;
+$secondary-font: "Cabin Sketch", sans-serif;
+$body-size: 1.6rem;
+.main {
+  //   background-color: green;
+  min-height: 100vh;
+  .banner {
+    background-image: url("/hero80_2.jpg");
+    height: 40rem;
+    .title {
+      height: 70%;
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      h1 {
+        font-size: 3.6rem;
+        color: white;
+        position: absolute;
+        bottom: 5rem;
+        // background-color: red;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  //form section
+  .formSection {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 5px 0 10px rgba($color: #000000, $alpha: 0.3);
+    transform: translateY(-10rem);
+    .wrapper {
+      font-size: 1.8rem;
+      .header {
+        h1,
+        p {
+          text-align: center;
+        }
+        p {
+          font-size: 1.6rem;
+          padding: 1rem 0;
+          color: rgba($color: #000000, $alpha: 0.5);
+        }
+      } //header
+      .content {
+        padding-top: 4rem;
+      }
+    }
+  }
+
+  .candidateWrapper {
+    // background-color: red;
+    .sectionTitle {
+      border-left: 0.5rem solid $primaryColorRed;
+      padding-left: 1rem;
+      font-weight: bold;
+    }
+    .choiceTitle {
+      padding-top: 3rem;
+    }
+    .candidateChoice {
+      display: flex;
+      padding: 1rem 0 1rem 0;
+      div {
+        position: relative;
+        display: flex;
+        align-items: center;
+        input {
+          opacity: 0;
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        label {
+          padding-right: 1rem;
+        }
+        div {
+          position: relative;
+          &::after {
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: transparent;
+            position: absolute;
+            display: inline;
+            // transform: translateX(2rem);
+            border-radius: 50%;
+            border: 0.1rem solid #121212;
+            right: 0;
+            pointer-events: none;
+            // ::after {
+            //   content: "h1";
+            //   width: 1rem;
+            //   height: 1rem;
+            //   background-color: $primaryColorRed;
+            //   // display: block;
+            // }
+          }
+        }
+        input:checked {
+          + div {
+            &::after {
+              background-color: $primaryColor;
+              border: 0.1rem solid $primaryColor;
+            }
+          }
+        }
+      }
+    }
+    .candidateArea {
+      .selectClass {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        select {
+          // flex: 1;
+          // background-color: red;
+          margin-top: 0rem;
+          font-size: 1.8rem;
+          padding: 1.3rem 0;
+          border: none;
+          border-bottom: 1px solid #121212;
+          outline: none;
+        }
+      }
+    }
+  } //candidate
+  .parentWrapper {
+    padding-top: 2rem;
+    .sectionTitle {
+      border-left: 0.5rem solid $primaryColorRed;
+      padding-left: 1rem;
+      font-weight: bold;
+    }
+  }
+  .cta {
+    width: 15rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    z-index: 2;
+    font-size: 1.8rem;
+    &::before {
+      content: "";
+      width: 0%;
+      background-color: $primaryColorRed;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      z-index: -1;
+      transition: 0.3s;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      background: lighten($color: $primaryColorRed, $amount: 10%);
+      position: absolute;
+      height: 100%;
+      top: 0;
+      z-index: -5;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+
+  //footer
+  .footer {
+    background-color: #19191919;
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .candidateWrapper {
+    .candidateArea {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+  .parentWrapper {
+    .parentArea {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .candidateWrapper {
+    .candidateArea {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+  .parentWrapper {
+    .parentArea {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .formSection {
+    width: 80% !important;
+  }
+}

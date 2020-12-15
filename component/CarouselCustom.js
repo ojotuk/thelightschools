@@ -81,7 +81,7 @@ export default class VerticalCarousel extends React.Component {
 class Panel extends React.Component {
   render() {
     return (
-      <aside className={this.props.styles.panel} style={this.props.panelStyle}>
+      <aside className={this.props.styles.panel}>
         <h2 className={this.props.styles.panel_header}>
           {this.props.data.header}
         </h2>

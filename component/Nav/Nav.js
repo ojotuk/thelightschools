@@ -29,12 +29,12 @@ const Nav = () => {
             </Link>{" "}
           </li>
           <li>
-            <Link href="/about">
+            <Link href="/#about">
               <a>About</a>
             </Link>{" "}
           </li>
           <li>
-            <Link href="/">
+            <Link href="/admission">
               <a>Admissions</a>
             </Link>{" "}
           </li>

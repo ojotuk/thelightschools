@@ -132,8 +132,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 .cores .core_2 {
@@ -151,8 +151,8 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 7rem;
-  -webkit-box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 .cores .core_3 {
@@ -170,8 +170,8 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 7rem;
-  -webkit-box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 .cores .core_4 {
@@ -189,8 +189,8 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 7rem;
-  -webkit-box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 .cores p {
@@ -225,8 +225,8 @@
   background-color: white;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +244,7 @@
 
 .welcome {
   background-color: #ffffff;
-  padding: 10rem 0 10rem 0;
+  padding: 5rem 0 5rem 0;
 }
 
 .welcome .intro {
@@ -264,28 +264,16 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 2rem;
 }
 
-.welcome .welcomeContent .welcome_col_1 .philosophy {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  gap: 3rem;
-}
-
-.welcome .welcomeContent .welcome_col_1 .philosophy img {
-  width: 100%;
-}
-
-.welcome .welcomeContent .welcome_col_1 .philosophy h3 {
+.welcome .welcomeContent div h3 {
   font-size: 2.4rem;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 0;
 }
 
-.welcome .welcomeContent .welcome_col_1 .philosophy p {
+.welcome .welcomeContent div p {
   padding: 1rem 0;
   color: rgba(0, 0, 0, 0.6);
   font-size: 1.6rem;
@@ -294,60 +282,14 @@
   padding-bottom: 3rem;
 }
 
-.welcome .welcomeContent .welcome_col_1 .philosophy span {
+.welcome .welcomeContent div span {
   cursor: pointer;
   background-color: #ffb607;
   padding: 1.5rem 2rem;
   font-size: 1.6rem;
   color: white;
   letter-spacing: 0.1rem;
-}
-
-.welcome .welcomeContent .welcome_col_2 {
-  position: relative;
-}
-
-.welcome .welcomeContent .welcome_col_2 .grid_gallery {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  position: relative;
-}
-
-.welcome .welcomeContent .welcome_col_2 .grid_gallery img {
-  width: 100%;
-}
-
-.welcome .welcomeContent .welcome_col_2 .grid_gallery .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.welcome .welcomeContent .welcome_col_2 .grid_gallery .overlay a {
-  color: white;
-  font-size: 1.6rem;
-  background-color: #ffb607;
-  padding: 1.5rem 2rem;
-}
-
-.welcome .welcomeContent .welcome_col_2:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.1);
+  width: 15rem;
 }
 
 .admissions {
@@ -394,10 +336,26 @@
   font-size: 1.6rem;
   cursor: pointer;
   background-color: #ffb607;
-  padding: 1.5rem 2rem;
   color: white;
-  -webkit-box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
+  width: 15rem;
+  height: 5rem;
+  border: 1px solid white;
+}
+
+.admissions .container span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .subscribes {
@@ -469,8 +427,8 @@
   padding: 1.5rem 2rem;
   cursor: pointer;
   outline: none;
-  -webkit-box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 .footer {
@@ -634,6 +592,11 @@
   margin-bottom: 1rem;
 }
 
+.custom {
+  height: 50rem;
+  max-height: 100vw;
+}
+
 @-webkit-keyframes heroSlide {
   0% {
     background-image: url("/hero80_1.jpg");
@@ -783,6 +746,12 @@
   .cores .core_2 {
     margin-top: 0;
   }
+  .welcome .welcomeContent {
+    padding-top: 3rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
   .subscribes {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -838,26 +807,11 @@
     font-size: 4.2rem;
   }
   .welcome .welcomeContent {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-column-gap: 6rem;
+            column-gap: 6rem;
   }
-  .welcome .welcomeContent .welcome_col_2 {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .welcome .welcomeContent .welcome_col_2 img {
-    width: 100%;
-  }
-  .welcome .welcomeContent .welcome_col_1 {
-    padding-right: 3rem;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+  .custom {
+    height: 45rem;
   }
   .footer .container {
     display: -ms-grid;
@@ -883,6 +837,21 @@
         -ms-flex-pack: start;
             justify-content: start;
     margin-left: 0;
+  }
+  .footer .container .about .brand .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

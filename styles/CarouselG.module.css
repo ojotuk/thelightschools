@@ -8,9 +8,9 @@
 }
 
 .mainContentWrapper .heading {
-  font-size: 3.6rem;
+  font-size: 2.4rem;
   color: white;
-  padding-bottom: 2rem;
+  padding: 1rem;
 }
 
 .mainContentWrapper .content {
@@ -20,7 +20,7 @@
 .selectors {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 30px;
   background: rgba(0, 0, 0, 0.1);
   height: 100%;
@@ -67,17 +67,18 @@ section.wrapper {
 }
 
 aside.panel {
-  width: 50%;
-  margin: 0 auto;
-  margin-right: 0;
+  width: 100%;
+  height: 100%;
   max-width: 90vw;
-  padding: 10rem 2rem;
+  margin-right: 0;
+  padding: 1rem 2rem;
   opacity: 0.9;
   color: #fff;
-  -webkit-box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-  -webkit-transition: background 500ms ease-in-out;
-  transition: background 500ms ease-in-out;
+  -webkit-box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(152, 0, 46, 0.5);
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
 }
 
 aside.panel h2.panel_header,
@@ -141,6 +142,13 @@ aside.panel button.panel_button:focus {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  aside.panel {
+    width: 50%;
+    background-color: rgba(152, 0, 46, 0.8);
   }
 }
 /*# sourceMappingURL=CarouselG.module.css.map */
