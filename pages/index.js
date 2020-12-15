@@ -2,9 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import stylesF from "../styles/Carousel.module.css";
 import stylesG from "../styles/CarouselG.module.css";
-
 import Nav from "../component/Nav/Nav";
-import Testimonials from "../component/Testimonials";
 import CarouselWrapper from "../component/CarouselWrapper";
 import { facilities, gallery } from "../component/TheLight";
 
@@ -12,7 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAnchor,
   faCalendar,
-  faCheck,
   faEnvelopeOpen,
   faMailBulk,
   faMap,
@@ -195,7 +192,7 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.about}>
             <div className={styles.brand}>
-              <img src="/logo.png" className={styles.logo} />
+              <img src="/logo.png" className={styles.logo} alt="logo" />
               <div className={styles.name}>
                 <h1>The Light</h1>
                 <h3>Schools</h3>
